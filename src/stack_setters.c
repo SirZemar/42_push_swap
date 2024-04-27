@@ -36,7 +36,7 @@ void	set_cheapest(t_stack *stack)
 
 /**
  * @brief Set stack with its minimun and maximun value.
- */
+*/
 void	set_min_max(t_stack *stack)
 {
 	int		i;

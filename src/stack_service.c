@@ -96,7 +96,6 @@ int	add_node(t_stack *stack, t_node *node)
 	return (1);
 }
 
-
 /**
  * @brief Iterate and free every node from stack.
 */

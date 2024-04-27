@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jose-ero <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: jose-ero <jose-ero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/14 17:24:34 by jose-ero          #+#    #+#             */
-/*   Updated: 2024/04/23 17:13:12 by jose-ero         ###   ########.fr       */
+/*   Updated: 2024/04/27 18:53:24 by jose-ero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@
  *   - @c price: Integer of the necessary moves to top both matching numbers.
  * @brief
  *   - @c move: Int that defines node move strategy.
- * 0: moves nodes seperatly. 1: moves nodes in up direction. 2: move nodes in down direction
+ * 0: moves nodes seperatly. 1: moves nodes in up direction. 
+ * 2: move nodes in down direction
  * @brief
  *   - @c target: Pointer to the node that corresponds to the 
  * corrected sorted position.
@@ -36,7 +37,7 @@
  * @brief
  *   - @c prev: Pointer to the previous node in the list.
  */
-typedef struct s_node	
+typedef struct s_node
 {
 	int				position;
 	int				value;
@@ -136,14 +137,8 @@ void	move_maximum_node_to_top(t_stack *stack);
 void	move_minimum_node_to_top(t_stack *stack);
 int		sort3(t_stack *stack);
 
-// *** Verify Inputs ***
-
-int		is_input_valid(int argc, char **argv);
-
-// *** TESTS *** //TODO Remove
-
-void	print_tests(t_stack *stack_a, t_stack *stack_b);
-
+// *** Args check ***
+char	**get_valid_args(int argc, char **argv);
 
 void	error(int status);
 void	free_stacks(t_stack *stack_a, t_stack *stack_b, int status);

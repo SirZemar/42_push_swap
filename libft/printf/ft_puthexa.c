@@ -26,5 +26,5 @@ int	ft_puthexa(unsigned long n, char *base)
 			ft_puthexa(n % 16, base);
 		}
 		return (ft_hexlen(n));
-	}	
+	}
 }

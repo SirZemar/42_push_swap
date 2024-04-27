@@ -106,8 +106,8 @@ https://medium.com/@ayogun/push-swap-c1f5d2d41e97
 +-- terminate.c
 | +-- void	error(int status)
 | +-- void	free_stacks(t_stack *stack_a, t_stack *stack_b, int status)
-+-- verify_input.c
-| +-- int			is_input_valid(int argc, char **argv)
-| +-- static int	ft_is_number(char *str)
-| +-- static int	verify_doubles(int argc, char **argv)
++-- args_check.c
+| +-- int			get_valid_args(int argc, char **argv)
+| +-- static int	is_number(char *str)
+| +-- static int	is_repeated(int argc, char **args)
 ```

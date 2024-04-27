@@ -36,7 +36,7 @@ void	set_target(t_node *node, t_stack *stack)
 	i = 0;
 	if (node->value > stack->maximum_node->value
 		|| node->value < stack->minimum_node->value)
-			node->target = stack->maximum_node;
+		node->target = stack->maximum_node;
 	else
 	{
 		distance = LONG_MAX;
@@ -47,12 +47,12 @@ void	set_target(t_node *node, t_stack *stack)
 			else if (node->value > stack->top->value
 				&& (node->value - stack->top->value) < distance)
 			{
-					distance = node->value - stack->top->value;
-					node->target = stack->top;
+				distance = node->value - stack->top->value;
+				node->target = stack->top;
 			}
 			stack->top = stack->top->next;
 		}
-	}	
+	}
 }
 
 /**
